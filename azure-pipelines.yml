@@ -30,9 +30,6 @@ stages:
       vmImage: $(vmImageName)
       
     steps:
-    - task: ManualIntervention@8
-      inputs:
-        instructions: 'Manual approval to build'
     - task: NodeTool@0
       inputs:
         versionSpec: '10.x'
